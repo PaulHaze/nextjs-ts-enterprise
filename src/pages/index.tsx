@@ -6,7 +6,7 @@ const Home: NextPage = () => {
   return (
     <div>
       <Head>
-        <title>CHANGE THIS</title>
+        <title>NextJs Enterprise Template</title>
         <link rel="icon" href="/favicon.png" />
         <link rel="apple-touch-icon" href="/logo192.png" />
       </Head>
