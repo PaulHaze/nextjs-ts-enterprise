@@ -18,7 +18,15 @@ module.exports = {
     'plugin:import/typescript',
     'plugin:cypress/recommended',
   ],
-  plugins: ['@typescript-eslint/eslint-plugin', 'cypress', 'prettier'],
+  plugins: [
+    '@typescript-eslint/eslint-plugin',
+    'cypress',
+    'prettier',
+    'import',
+  ],
+  globals: {
+    React: 'readonly',
+  },
   settings: {
     'import/parsers': {
       '@typescript-eslint/parser': ['.ts', '.tsx'],
