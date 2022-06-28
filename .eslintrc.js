@@ -18,6 +18,7 @@ module.exports = {
     'plugin:import/warnings',
     'plugin:import/typescript',
     'plugin:cypress/recommended',
+    'plugin:storybook/recommended',
   ],
   plugins: [
     '@typescript-eslint/eslint-plugin',
