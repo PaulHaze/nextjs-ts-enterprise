@@ -13,7 +13,8 @@
     "start": "next start",
     "lint": "next lint",
     "test": "jest --watch",
-    "e2e": "npx cypress run"
+    "e2e": "npx cypress run",
+    "prepare": "husky install"
   },
   "dependencies": {
     "next": "latest",
