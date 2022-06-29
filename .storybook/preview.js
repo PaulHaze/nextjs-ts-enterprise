@@ -1,5 +1,5 @@
 // import { Suspense } from 'react';
-import '../src/styles/main.css';
+import '../src/styles/main.scss';
 import * as NextImage from 'next/image';
 // import { I18nextProvider } from 'react-i18next';
 // import i18n from './i18n';

@@ -8,14 +8,14 @@ module.exports = {
     '@storybook/addon-essentials',
     '@storybook/addon-interactions',
     {
-      /**
-       * NOTE: fix Storybook issue with PostCSS@8
-       * @see https://github.com/storybookjs/storybook/issues/12668#issuecomment-773958085
-       */
-      name: '@storybook/addon-postcss',
+      name: 'storybook-addon-sass-postcss',
       options: {
+        loadSassAfterPostCSS: true,
         postcssLoaderOptions: {
           implementation: require('postcss'),
+        },
+        rule: {
+          test: /\.(scss|sass)$/i,
         },
       },
     },
