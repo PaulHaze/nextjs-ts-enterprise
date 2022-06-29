@@ -1,7 +1,7 @@
 import { BaseTemplateProps } from './BaseTemplate';
 
 const base: BaseTemplateProps = {
-  sampleText: 'Gday Bear Bear',
+  sampleText: 'Gday',
 };
 
 export const mockBaseTemplateProps = {
