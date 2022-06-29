@@ -68,6 +68,8 @@ module.exports = {
           '**/*.test.ts',
           '**/*.test.jsx',
           '**/*.test.js',
+          '**/*.stories.*',
+          '**/.storybook/**/*.*',
         ],
       },
     ],
