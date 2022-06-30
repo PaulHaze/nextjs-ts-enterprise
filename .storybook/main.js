@@ -24,6 +24,11 @@ module.exports = {
     builder: 'webpack5',
   },
   webpackFinal: (config) => {
+    // config.module.rules.push({
+    //   test: /\.scss$/,
+    //   use: ['style-loader', 'css-loader', 'sass-loader'],
+    //   include: path.resolve(__dirname, '../'),
+    // });
     config.resolve.alias = {
       ...config.resolve?.alias,
       '@': [path.resolve(__dirname, '../src/'), path.resolve(__dirname, '../')],

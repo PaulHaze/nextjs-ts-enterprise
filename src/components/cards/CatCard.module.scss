@@ -1,2 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
 .container {
+}
+
+.card__image {
+  @apply w-full object-cover;
+}
+
+.card {
+  font-family: 'Quicksand', sans-serif;
+
+  // takes value on left if it is SMALLER, otherwise value on right
+  // Sets an upper boundary of width
+  // width: min(70vw, 400px);
+
+  // takes value on left if it is GREATER, otherwise value on right
+  // sets a lower boundary of width
+  // width: max(50vw, 280px);
+
+  // sets a minimum value on the left, a range value in middle, and an upper value on right
+  width: clamp(280px, 40vw, 400px);
+}
+
+.card__body {
+  @apply p-4 flex flex-col space-y-2;
+}
+
+.tag {
+  @apply bg-gradient-to-b from-[#276bc4] to-[#56ccf2] text-white text-sm font-bold px-5 py-0.5 rounded-[1em] self-start;
+}
+
+.card__body h4 {
+  @apply text-2xl font-semibold text-black/80;
+}
+
+.card__footer {
+  @apply flex pl-4;
+}
+
+.user {
+  @apply flex mb-5 gap-3 mt-5;
+  h5 {
+    @apply text-sm font-semibold text-black/80  mt-0.5;
+  }
+  img {
+    border-radius: 50%;
+  }
+  small {
+    @apply text-gray-500;
+  }
 }

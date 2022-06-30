@@ -6,6 +6,9 @@ module.exports = {
   sassOptions: {
     includePaths: [path.join(__dirname, 'css')],
   },
+  images: {
+    domains: ['i.pravatar.cc', 'openclipart.org'],
+  },
   eslint: {
     ignoreDuringBuilds: true,
   },
