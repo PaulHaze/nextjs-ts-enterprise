@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-import styles from './CatCard.module.css';
+import styles from './CatCard.module.scss';
 
 export type CatCardProps = {
   tag: string;
