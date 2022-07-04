@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-import styles from './CatCard.module.css';
+import styles from './CatCard.module.scss';
 
 export type CatCardProps = {
   tag: string;
@@ -51,6 +51,7 @@ export const CatCard = ({ tag, title, body, author, time }: CatCardProps) => {
           </div>
         </div>
       </div>
+      <div className={styles.test}>Test block</div>
     </div>
   );
 };
