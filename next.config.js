@@ -10,7 +10,15 @@ module.exports = {
     domains: ['i.pravatar.cc', 'openclipart.org'],
   },
   eslint: {
+    // Change this to FALSE when nearing completion of project
     ignoreDuringBuilds: true,
+  },
+  typescript: {
+    // !! WARN !!
+    // Dangerously allow production builds to successfully complete even if
+    // your project has type errors.
+    // Change this when nearing completion of project
+    ignoreBuildErrors: true,
   },
   pageExtensions: [
     // `.page.tsx` for page components

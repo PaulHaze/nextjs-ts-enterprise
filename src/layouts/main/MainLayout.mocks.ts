@@ -1,7 +1,7 @@
 import { MainLayoutProps } from './MainLayout';
 
 const base: MainLayoutProps = {
-  sampleText: 'Gday',
+  children: 'Gday',
 };
 
 export const mockMainLayoutProps = {

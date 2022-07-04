@@ -12,7 +12,10 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.png" />
         <link rel="apple-touch-icon" href="/logo192.png" />
       </Head>
-      <div className="h-[100vh] bg-gradient-to-br from-green-300/50 to-sky-800/50 flex items-center justify-center px-4">
+
+      <div className="bg-red-500 h-[64px]">nav bar</div>
+
+      <div className="flex flex-col min-h-[calc(100vh-64px)] bg-gradient-to-br from-green-300/50 to-sky-800/50 items-center justify-center px-4">
         <CatCard {...mockCatCardProps.base} />
       </div>
     </div>

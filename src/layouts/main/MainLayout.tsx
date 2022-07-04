@@ -1,13 +1,17 @@
+import Head from 'next/head';
 import styles from './MainLayout.module.scss';
 
 export type MainLayoutProps = {
-  sampleText: string;
+  children: React.ReactNode;
 };
 
-export const MainLayout = ({ sampleText }: MainLayoutProps) => {
+export const MainLayout = ({ children }: MainLayoutProps) => {
   return (
-    <div className={styles.container}>
-      <p>{sampleText}</p>
-    </div>
+    <>
+      <Head>
+        <title>Primary Layout Example</title>
+      </Head>
+      <main className={styles.main}>{children}</main>
+    </>
   );
 };

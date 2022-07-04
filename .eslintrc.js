@@ -82,6 +82,15 @@ module.exports = {
         ignoreRestSiblings: false,
       },
     ],
+    '@typescript-eslint/ban-types': [
+      'error',
+      {
+        extendDefaults: true,
+        types: {
+          '{}': false,
+        },
+      },
+    ],
   },
   overrides: [
     {

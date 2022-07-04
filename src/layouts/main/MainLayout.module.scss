@@ -1,2 +1,7 @@
-.container {
+.main {
+  @apply flex min-h-[calc(100vh-theme('spacing.7'))] bg-gradient-to-br from-green-300/50 to-sky-800/50;
+
+  > section {
+    @apply p-8;
+  }
 }
