@@ -43,7 +43,7 @@ export const CatCard = ({ tag, title, body, author, time }: CatCardProps) => {
               />
             </div>
             <div className={styles.user__info}>
-              <h5 className="mt-1 text-sm font-semibold text-gray-700">
+              <h5 className="mt-6 text-sm font-semibold text-gray-700">
                 {author}
               </h5>
               <small className="text-gray-500">{time}</small>
@@ -51,7 +51,6 @@ export const CatCard = ({ tag, title, body, author, time }: CatCardProps) => {
           </div>
         </div>
       </div>
-      <div className={styles.test}>Test block</div>
     </div>
   );
 };
