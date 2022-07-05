@@ -8,6 +8,9 @@ export type SidebarLayoutProps = {
 export const SidebarLayout = () => {
   return (
     <nav className={styles.nav}>
+      <p className="text-xs font-bold text-gray-400 uppercase">
+        Sidebar Placeholder
+      </p>
       <input className={styles.input} placeholder="Search..." />
       <Link href="/">
         <a href="/">Home</a>

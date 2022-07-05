@@ -9,8 +9,8 @@ import { NextPageWithLayout } from '@/types/page';
 
 const Home: NextPageWithLayout = () => {
   return (
-    <section>
-      <div className="flex flex-col min-h-[calc(100vh-64px)] bg-gradient-to-br from-green-300/50 to-sky-800/50 items-center justify-center px-4">
+    <section className="w-full">
+      <div className="flex flex-col min-h-[100vh] bg-gradient-to-br from-green-300/50 to-sky-800/50 items-center justify-center">
         <CatCard {...mockCatCardProps.base} />
       </div>
     </section>
