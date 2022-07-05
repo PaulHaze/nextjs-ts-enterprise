@@ -1,9 +1,7 @@
 import Link from 'next/link';
 import styles from './SidebarLayout.module.scss';
 
-export type SidebarLayoutProps = {
-  sampleText: string;
-};
+export type SidebarLayoutProps = {};
 
 export const SidebarLayout = () => {
   return (

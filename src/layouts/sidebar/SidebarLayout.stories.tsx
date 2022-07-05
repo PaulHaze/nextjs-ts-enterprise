@@ -9,9 +9,7 @@ export default {
   argTypes: {},
 } as ComponentMeta<typeof SidebarLayout>;
 
-const Template: ComponentStory<typeof SidebarLayout> = (args) => (
-  <SidebarLayout {...args} />
-);
+const Template: ComponentStory<typeof SidebarLayout> = () => <SidebarLayout />;
 
 export const Base = Template.bind({});
 
