@@ -24,15 +24,17 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
 
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"],
       "~/*": ["./public/*"],
-      "@Components": ["src/components/index"],
-      "@Layouts": ["src/layouts/index"],
-      "@Features": ["src/features/index"],
-      "@Sections": ["src/sections/index"]
+      "@Components": ["src/components/index"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
