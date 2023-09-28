@@ -34,12 +34,6 @@
       "@Components": ["src/components/index"]
     }
   },
-  "include": [
-    "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx",
-    ".next/types/**/*.ts",
-    "./jest-setup.ts"
-  ],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
   "exclude": ["./out/**/*", "./node_modules/**/*"]
 }
