@@ -6,7 +6,6 @@
     "skipLibCheck": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
-
     "noImplicitAny": true,
     "noImplicitReturns": true,
     "noImplicitThis": true,
@@ -14,7 +13,6 @@
     "noUnusedParameters": true,
     "allowUnreachableCode": false,
     "noFallthroughCasesInSwitch": true,
-
     "noEmit": true,
     "esModuleInterop": true,
     "module": "esnext",
@@ -29,7 +27,6 @@
         "name": "next"
       }
     ],
-
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"],
@@ -37,6 +34,6 @@
       "@Components": ["src/components/index"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
   "exclude": ["./out/**/*", "./node_modules/**/*"]
 }
