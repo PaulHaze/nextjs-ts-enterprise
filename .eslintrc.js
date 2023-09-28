@@ -15,6 +15,7 @@ module.exports = {
         endOfLine: 'auto',
       },
     ],
+    'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
   },
   overrides: [
     // Configuration for TypeScript files

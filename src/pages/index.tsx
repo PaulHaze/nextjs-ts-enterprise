@@ -11,12 +11,12 @@ const Home: NextPage = () => {
         />
       }
     >
-      <div className="h-[100vh] bg-gradient-to-br from-green-300/50 to-sky-800/50 flex items-center justify-center px-5">
-        <div className="flex flex-col justify-center bg-white rounded-lg shadow-2xl p-md sm:p-lg max-w-md">
-          <h1 className="font-bold text-black text-center bg-clip-text">
+      <div className="mt-3 flex h-[100vh] items-center justify-center bg-gradient-to-br from-green-300/50 to-sky-800/50 p-4 px-5">
+        <div className="mt-10 flex max-w-md flex-col justify-center rounded-lg bg-white shadow-2xl sm:p-lg">
+          <h1 className="bg-clip-text text-center font-bold text-black">
             Im your new Tailwind Project...
           </h1>
-          <p className="text-[#504e63] text-center">
+          <p className="text-center text-[#504e63]">
             Delete this and make something great!
           </p>
         </div>

@@ -1,4 +1,7 @@
+/* eslint-disable global-require */
+
 module.exports = {
+  // plugins: [require('prettier-plugin-tailwindcss')],
   content: ['./src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     fontSize: {
