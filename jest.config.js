@@ -13,7 +13,7 @@ const customJestConfig = {
     '^@/public/(.*)$': '<rootDir>/public/$1',
     '^__mocks__/(.*)$': '<rootDir>/__mocks__/$1',
   },
-  setupFilesAfterEnv: ['<rootDir>/jest.setup.js'],
+  setupFilesAfterEnv: ['<rootDir>/jest.setup.ts'],
   testPathIgnorePatterns: ['<rootDir>/e2e/'],
   clearMocks: true,
   collectCoverage: true,
