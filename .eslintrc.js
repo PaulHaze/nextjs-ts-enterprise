@@ -8,11 +8,16 @@ module.exports = {
     'plugin:prettier/recommended',
   ],
   rules: {
+    'no-undef': 'error',
     'prettier/prettier': [
       'error',
       {
         singleQuote: true,
         endOfLine: 'auto',
+        semi: true,
+        trailingComma: 'all',
+        printWidth: 80,
+        tabWidth: 2,
       },
     ],
     'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
@@ -33,17 +38,7 @@ module.exports = {
         tsconfigRootDir: __dirname,
       },
       rules: {
-        'prettier/prettier': [
-          'error',
-          {
-            singleQuote: true,
-            endOfLine: 'auto',
-            semi: true,
-            trailingComma: 'all',
-            printWidth: 80,
-            tabWidth: 2,
-          },
-        ],
+        'no-undef': 'error',
         'react/destructuring-assignment': 'off', // Vscode doesn't support automatically destructuring, it's a pain to add a new variable
         'jsx-a11y/anchor-is-valid': 'off', // Next.js uses its own internal link system
         'react/require-default-props': 'off', // Allow non-defined react props as undefined
