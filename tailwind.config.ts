@@ -1,7 +1,6 @@
-/* eslint-disable global-require */
+import type { Config } from 'tailwindcss';
 
-module.exports = {
-  // plugins: [require('prettier-plugin-tailwindcss')],
+const config: Config = {
   content: ['./src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     fontSize: {
@@ -67,3 +66,5 @@ module.exports = {
     },
   },
 };
+
+export default config;
