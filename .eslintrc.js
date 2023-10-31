@@ -60,6 +60,10 @@ module.exports = {
           },
         ],
         '@typescript-eslint/no-unused-vars': 'off',
+        'import/no-extraneous-dependencies': [
+          'error',
+          { devDependencies: true },
+        ],
       },
     },
     // Configuration for testing
