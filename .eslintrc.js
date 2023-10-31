@@ -8,7 +8,6 @@ module.exports = {
     'plugin:prettier/recommended',
   ],
   rules: {
-    '@next/next/no-html-link-for-pages': 'off',
     'no-undef': 'error',
     'prettier/prettier': [
       'error',
