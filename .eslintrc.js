@@ -2,8 +2,8 @@ module.exports = {
   // Configuration for JavaScript files
   extends: [
     'next',
+    'next/core-web-vitals',
     'airbnb-base',
-    'next/core-web-vitals', // Needed to avoid warning in next.js build: 'The Next.js plugin was not detected in your ESLint configuration',
     'prettier',
     'plugin:prettier/recommended',
   ],
@@ -20,6 +20,7 @@ module.exports = {
         tabWidth: 2,
       },
     ],
+    'unused-imports/no-unused-imports': 'error',
     'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
   },
   overrides: [
@@ -38,7 +39,6 @@ module.exports = {
         tsconfigRootDir: __dirname,
       },
       rules: {
-        'no-undef': 'error',
         'react/destructuring-assignment': 'off', // Vscode doesn't support automatically destructuring, it's a pain to add a new variable
         'jsx-a11y/anchor-is-valid': 'off', // Next.js uses its own internal link system
         'react/require-default-props': 'off', // Allow non-defined react props as undefined
@@ -59,13 +59,7 @@ module.exports = {
             jsx: 'never',
           },
         ],
-        'import/no-extraneous-dependencies': [
-          'error',
-          { devDependencies: true },
-        ],
         '@typescript-eslint/no-unused-vars': 'off',
-        'unused-imports/no-unused-imports': 'error',
-        'unused-imports/no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
       },
     },
     // Configuration for testing
