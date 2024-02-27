@@ -8,7 +8,6 @@ module.exports = {
     'plugin:prettier/recommended',
   ],
   rules: {
-    'no-undef': 'error',
     'prettier/prettier': [
       'error',
       {
@@ -20,7 +19,6 @@ module.exports = {
         tabWidth: 2,
       },
     ],
-    'unused-imports/no-unused-imports': 'error',
     'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
   },
   overrides: [
@@ -28,17 +26,13 @@ module.exports = {
     {
       files: ['**/*.ts', '**/*.tsx'],
       plugins: ['@typescript-eslint', 'unused-imports'],
-      extends: [
-        'airbnb-typescript',
-        'next/core-web-vitals',
-        'prettier',
-        'plugin:prettier/recommended',
-      ],
+      extends: ['airbnb-typescript', 'prettier', 'plugin:prettier/recommended'],
       parserOptions: {
         project: './tsconfig.json',
         tsconfigRootDir: __dirname,
       },
       rules: {
+        'no-undef': 'error',
         'react/destructuring-assignment': 'off', // Vscode doesn't support automatically destructuring, it's a pain to add a new variable
         'jsx-a11y/anchor-is-valid': 'off', // Next.js uses its own internal link system
         'react/require-default-props': 'off', // Allow non-defined react props as undefined
@@ -59,11 +53,16 @@ module.exports = {
             jsx: 'never',
           },
         ],
-        '@typescript-eslint/no-unused-vars': 'off',
         'import/no-extraneous-dependencies': [
           'error',
           { devDependencies: true },
         ],
+        'no-unused-vars': 'off',
+        '@typescript-eslint/no-unused-vars': [
+          'error',
+          { argsIgnorePattern: '^_' },
+        ],
+        'unused-imports/no-unused-imports': 'error',
       },
     },
     // Configuration for testing
