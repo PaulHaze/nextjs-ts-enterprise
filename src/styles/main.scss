@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 @layer base {
+  * {
+    @apply bg-gray-100 text-gray-800 dark:bg-gray-900 dark:text-gray-100/80;
+  }
   h1 {
     @apply text-4xl font-normal leading-normal;
   }
