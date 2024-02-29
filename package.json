@@ -1,6 +1,7 @@
 {
   "name": "nextjs-enterprise-starter",
   "version": "0.1.0",
+  "homepage": "https://github.com/PaulHaze/nextjs-ts-enterprise",
   "private": true,
   "scripts": {
     "dev": "next dev --turbo",
