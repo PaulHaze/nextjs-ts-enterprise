@@ -47,7 +47,6 @@ const config: Config = {
       statements: 20,
     },
   },
-
   // The directory where Jest should output its coverage files
   // coverageDirectory: undefined,
 
@@ -56,6 +55,25 @@ const config: Config = {
 
   // Indicates which provider should be used to instrument code for coverage
   coverageProvider: 'v8',
+
+  // A map from regular expressions to module names or to arrays of module names that allow to stub out resources with a single module
+  moduleNameMapper: {
+    // Handle module aliases (this will be automatically configured for you soon)
+    '^@/(.*)$': '<rootDir>/src/$1',
+    '^@/public/(.*)$': '<rootDir>/public/$1',
+    '^__mocks__/(.*)$': '<rootDir>/__mocks__/$1',
+  },
+
+  // A list of paths to modules that run some code to configure or set up the testing framework before each test
+  setupFilesAfterEnv: ['<rootDir>/jest.setup.ts'],
+
+  // The test environment that will be used for testing
+  testEnvironment: 'jsdom',
+
+  // The glob patterns Jest uses to detect test files
+  testMatch: ['**/__tests__/**/*.[jt]s?(x)', '**/?(*.)+(spec|test).[tj]s?(x)'],
+
+  // #region CURRENTLY UNUSED SETTINGS
 
   // A list of reporter names that Jest uses when writing coverage reports
   // coverageReporters: [
@@ -111,15 +129,6 @@ const config: Config = {
   //   "node"
   // ],
 
-  // A map from regular expressions to module names or to arrays of module names that allow to stub out resources with a single module
-  moduleNameMapper: {
-    // Handle module aliases (this will be automatically configured for you soon)
-    '^@/(.*)$': '<rootDir>/src/$1',
-    '^@Components': '<rootDir>/components/index.ts',
-    '^@/public/(.*)$': '<rootDir>/public/$1',
-    '^__mocks__/(.*)$': '<rootDir>/__mocks__/$1',
-  },
-
   // An array of regexp pattern strings, matched against all module paths before considered 'visible' to the module loader
   // modulePathIgnorePatterns: [],
 
@@ -164,26 +173,17 @@ const config: Config = {
   // The paths to modules that run some code to configure or set up the testing environment before each test
   // setupFiles: [],
 
-  // A list of paths to modules that run some code to configure or set up the testing framework before each test
-  setupFilesAfterEnv: ['<rootDir>/jest.setup.ts'],
-
   // The number of seconds after which a test is considered as slow and reported as such in the results.
   // slowTestThreshold: 5,
 
   // A list of paths to snapshot serializer modules Jest should use for snapshot testing
   // snapshotSerializers: [],
 
-  // The test environment that will be used for testing
-  testEnvironment: 'jsdom',
-
   // Options that will be passed to the testEnvironment
   // testEnvironmentOptions: {},
 
   // Adds a location field to test results
   // testLocationInResults: false,
-
-  // The glob patterns Jest uses to detect test files
-  testMatch: ['**/__tests__/**/*.[jt]s?(x)', '**/?(*.)+(spec|test).[tj]s?(x)'],
 
   // An array of regexp pattern strings that are matched against all test paths, matched tests are skipped
   // testPathIgnorePatterns: [
@@ -219,6 +219,8 @@ const config: Config = {
 
   // Whether to use watchman for file crawling
   // watchman: true,
+
+  // #endregion
 };
 
 export default createJestConfig(config);
