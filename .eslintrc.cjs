@@ -67,7 +67,7 @@ module.exports = {
     },
     // Configuration for testing
     {
-      files: ['**/*.test.ts', '**/*.test.tsx'],
+      files: ['**/*.test.ts', '**/*.test.tsx','**/*.test.js', '**/*.test.jsx'],
       plugins: ['jest', 'jest-formatting', 'testing-library', 'jest-dom'],
       extends: [
         'plugin:jest/recommended',
