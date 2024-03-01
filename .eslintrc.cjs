@@ -20,6 +20,17 @@ module.exports = {
       },
     ],
     'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
+    'import/extensions': [
+      'warn',
+      'ignorePackages',
+      {
+        '': 'never',
+        ts: 'never',
+        tsx: 'never',
+        js: 'never',
+        jsx: 'never',
+      },
+    ],
   },
   overrides: [
     // Configuration for TypeScript files
@@ -42,17 +53,6 @@ module.exports = {
         '@typescript-eslint/comma-dangle': 'off', // Avoid conflict rule between Eslint and Prettier
         '@typescript-eslint/consistent-type-imports': 'error', // Ensure `import type` is used when it's necessary
         'import/prefer-default-export': 'off', // Named export is easier to refactor automatically
-        'import/extensions': [
-          'warn',
-          'ignorePackages',
-          {
-            '': 'never',
-            ts: 'never',
-            tsx: 'never',
-            js: 'never',
-            jsx: 'never',
-          },
-        ],
         'import/no-extraneous-dependencies': [
           'error',
           { devDependencies: true },
